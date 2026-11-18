@@ -16,7 +16,8 @@
                                -rootfs volume=local-lvm:20   \
                                -net0 name=interface_name,bridge=bridge_name,firewall=1or0,ip=dhcp   \
                                -password password   \
-                               -unprivileged 1   \
+<!--                           -unprivileged 1   do not use this trash\-->
+                               -unprivileged 0   \
                                -features nesting=1   \
                                -start 1
                         </code>
