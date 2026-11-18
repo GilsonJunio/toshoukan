@@ -1,0 +1,74 @@
+<html>
+    <head></head>
+    <body>
+        <article>
+            <h1>Proxmox VE</h1>
+            <h2>Manage containers</h2>
+                <ul>
+                    <li>Create containers
+                        <code>
+                            # pct create 200 local:vztmpl/fedora-44-cloud_amd64.tar.xz \
+                               -cores number_of_cores   \
+                               -memory amount_of_ram_in_mb   \
+                               -swap amount_of_ram_in_mb   \
+                               -ostype system_name   \
+                               -storage storage   \
+                               -rootfs volume=local-lvm:20   \
+                               -net0 name=interface_name,bridge=bridge_name,firewall=1or0,ip=dhcp   \
+                               -password password   \
+                               -unprivileged 1   \
+                               -features nesting=1   \
+                               -start 1
+                        </code>
+                        <p>
+                            local:vztmpl is a shortcut for /var/lib/vz/template/cache/
+                            local stands for /var/lib/vz/
+                            vztmpl stands for ..../template/cache/
+                        </p>
+                        <p>
+                            -rootfs volume=local-lvm:20
+                            Sets the root file system
+                        </p>
+
+                    </li>
+                    <li>Enter container</li>
+                        <code>
+                            
+                        </code>
+                    <li>Stop container</li>
+                        <code>
+                            
+                        </code>
+                    <li>Destroy Container</li>
+                        <code>
+                            
+                        </code>
+                    <li>Reboot container</li>
+                        <code>
+                            
+                        </code>
+                    <li>Delete containers</li>
+                        <code>
+                            
+                        </code>
+                    <li>List containers</li>
+                        <code>
+                            
+                        </code>
+                    <li>Rename containers</li>
+                        <code>
+                            
+                        </code>
+                    <li>Edit container params (Reboot container next)</li>
+                        <code>
+
+                        </code>
+                    <li></li>
+                
+                </ul>
+        </article>
+        <footer>
+            <p><cite></cite></p>
+        </footer>
+    </body>
+</html>
